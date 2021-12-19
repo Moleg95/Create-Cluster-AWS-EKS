@@ -3,20 +3,19 @@
 ## Step-1: Delete Node Group
 
   We can delete a nodegroup separately using command "eksctl delete nodegroup":
+  
      - viewing list EKS Clusters:
      	  #eksctl get clusters
 	  
      - viewing Node Group name in cluster:
-	       (eksctl get nodegroup --cluster=<clusterName>)
-	       #eksctl get nodegroup --cluster=eksdemo1
+	        #eksctl get nodegroup --cluster=eksdemo1
 
      - Delete Node Group:
-	       (eksctl delete nodegroup --cluster=<clusterName> --name=<nodegroupName>)
-	       #eksctl delete nodegroup --cluster=eksdemo1 --name=eksdemo1-ng-public1
+	        #eksctl delete nodegroup --cluster=eksdemo1 --name=eksdemo1-ng-public1
 
 ## Step-2: Delete Cluster
 
-	       #eksctl delete cluster eksdemo1
+	        #eksctl delete cluster eksdemo1
 
 Important Notes!!!
 
